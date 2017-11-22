@@ -12,6 +12,7 @@ class UsersController < ApplicationController
       redirect welcome_path
     else
       redirect signup_path
+    end
   end
 
 private
