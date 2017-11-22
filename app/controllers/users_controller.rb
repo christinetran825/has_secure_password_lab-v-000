@@ -10,6 +10,8 @@ class UsersController < ApplicationController
     if @user.save
       session[:user_id] = @user.id
       redirect welcome_path
+    else
+      redirect signup_path
   end
 
 private
