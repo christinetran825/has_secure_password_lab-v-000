@@ -11,7 +11,7 @@ class UsersController < ApplicationController
       session[:user_id] = @user.id
       redirect '/users/new'
     else
-      redirect '/users/new'
+      redirect '/'
     end
   end
 
